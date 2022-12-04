@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Nanum+Gothic&family=Ubuntu:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* display: flex; */
+  font-family: "Baloo Bhai 2", cursive;
+  /* background: black;
+  color: white; */
+  height: 80vh;
+  width: 100vw;
+  background-image: url(/image/bgimage1.jpg);
+}
+
+#logo img {
+  display: flex;
+  width: 56px;
+  border-radius: 10px;
+  position: relative;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 50px;
+  width: 100%;
+  /* position: fixed; */
+  background-color: #000000;
+  border-radius: 20px;
+  opacity: 0.9;
+}
+
+#navbar ul li a {
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+}
+
+#navbar ul li:hover {
+  border-radius: 20px;
+  color: rgb(14, 13, 13);
+  background-color: rgb(87, 85, 85);
+}
+
+#navbar ul {
+  display: flex;
+  text-decoration: none;
+}
+
+#navbar ul li {
+  display: flex;
+  padding: 4px 24px;
+  margin: 3px 1px;
+}
+
+.btn {
+  border-radius: 10px;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-family: "Baloo Bhai 2", cursive;
+  border-radius: 20px;
+}
+
+.btn:hover {
+  background-color: #525050;
+}
+
+.Navbarplaceholder {
+  font-family: "Baloo Bhai 2", cursive;
+  border-radius: 8px;
+  background: black;
+  color: white;
+}
+
+.navBtn {
+  display: flex;
+  position: absolute;
+  right: 2%;
+}
+
+/* song */
+
+.container {
+  background-image: url(/image/bgimage2.jpg);
+  background-size: 440px;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 72vh;
+  color: white;
+  background-color: rgb(10, 10, 10);
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.songItem {
+  height: 33px;
+  display: flex;
+  border-radius: 20px;
+
+  background-color: white;
+  color: black;
+  width: 45%;
+  margin: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.songItem img {
+  height: 30px;
+  width: 25px;
+  margin: 0 23px;
+}
+.songItemPlay{
+  cursor: pointer;
+  margin: 10px;
+}
+
+.timestamp {
+  margin: 0 23px;
+}
+
+#pauseSong {
+  height: 15px;
+  width: 20px;
+  margin: -4px 3px;
+}
+
+/* footer */
+
+.bottom {
+  background: #030303;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0%;
+  height: 50px;
+  width: 100%;
+  flex-direction: column;
+  /* opacity: 0.9; */
+}
+
+#myProgressBar {
+  width: 80vw;
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+}
+
+
+#backward , #pause , #masterPlay , #forward{
+  margin: 10px;
+  cursor: pointer;
+}
+.songInfo {
+  position: absolute;
+  left: 10rem;
+}
+
+#gif{
+  height: 18px;
+  width: 60px;
+  position: sticky;
+  right: 199px;
+  opacity: 0;
+  transition: 0.8s;
+}
