@@ -121,10 +121,22 @@ body {
 .songItemPlay{
   cursor: pointer;
   margin: 10px;
+  /* position: fixed; */
 }
-
+.songName{
+  position: absolute;
+  left: 340px;
+}
 .timestamp {
   margin: 0 23px;
+}
+.timestampBottom{
+  color: white;
+  size: 60px;
+  position: absolute;
+  right: 70px;
+  top: 10px;
+  
 }
 
 #pauseSong {
